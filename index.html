@@ -7,10 +7,11 @@
     <title>RECRUITMENT</title>
     <link rel="stylesheet" href="desktop.css">
     <script src='https://kit.fontawesome.com/2ee0245f3d.js' crossorigin='anonymous'></script>
+    <script></script>
 </head>
 <body>
     <!--Flecha que tira pa arriba-->
-    <i class="ir-arriba fa-solid fa-circle-up"></i>
+    <i class="irarriba fa-solid fa-circle-up"></i>
     <header class="ancho">
         <figure class >
             <img src="imagenes/brand.png" alt= "" />
@@ -71,5 +72,14 @@
               </ul>
         </div>
     </footer>
+    <script >
+        $(document).ready(function(){
+            $('.irarriba').click(function(){
+                $('body, html').animate({
+                    scrollTop: '0px'
+                }, 1000);
+            });
+          });
+          </script>
 </body>
 </html>

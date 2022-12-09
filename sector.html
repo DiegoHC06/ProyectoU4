@@ -6,9 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RECRUITMENT</title>
     <link rel="stylesheet" href="desktop.css">
+    <link rel="stylesheet" href="sector.css">
     <script src='https://kit.fontawesome.com/2ee0245f3d.js' crossorigin='anonymous'></script>
+
+
+    <script src="responsiveslides.min.js"></script>
 </head>
 <body>
+     <!--Flecha que tira pa arriba-->
+     <i class="ir-arriba fa-solid fa-circle-up"></i>
     <header class="ancho">
         <figure class >
             <img src="imagenes/brand.png" alt= "" />
@@ -25,19 +31,33 @@
         </nav>
     </header>
    
-    <section class="contenedor2 ancho">
-        <h2 class="welcome">Welcome to our site!</h2>
-        <div class="contenedorinfo">
-            <article class="info1">
-                <figure  >
-                    <img src="imagenes/home-02.jpg" alt= "" />
-                </figure>
-                <h3>Ensuring the highest level of customers satisfaction</h3>
-                <p>Our company is your one-stop-solution for all needs. There is no doubt that we are the leaders and you don't have to worry about our image because it is perfect.</p>
-            </article>
-           
-        </div>
-    </section>
+    <div class="callbacks_container">
+        <ul class="rslides callbacks callbacks1" id="slider4">
+          <li id="callbacks1_s0" class="callbacks1_on" style="float: left; position: relative; opacity: 1; z-index: 2; transition: opacity 500ms ease-in-out 0s;">
+            <img src="imagenes/help-05.jpg" alt="">
+            <p class="caption">Este es el texto 1</p>
+          </li>
+          <li id="callbacks1_s1" class="" style="float: none; position: absolute; opacity: 0; z-index: 1; display: list-item; transition: opacity 500ms ease-in-out 0s;">
+            <img src="imagenes/help-03.jpg" alt="">
+            <p class="caption">texto 2</p>
+          </li>
+          <li id="callbacks1_s2" class="" style="float: none; position: absolute; opacity: 0; z-index: 1; display: list-item; transition: opacity 500ms ease-in-out 0s;">
+            <img src="imagenes/help-04.jpg" alt="">
+            <p class="caption">texto 3</p>
+          </li>
+        </ul><a href="#" class="callbacks_nav callbacks1_nav prev">Previous</a><a href="#" class="callbacks_nav callbacks1_nav next">Next</a>
+      </div>
+
+
+      <section>
+        <h1>video</h1>
+        <article class="videos">
+            <div clas="contenedorvideo">
+              <iframe src="https://www.youtube.com/watch?v=ZCbGPYIdEzg" frameborder="0" allowfullscreen=""></iframe>
+            </div>
+          </article>
+      </section>
+    <br>
     <footer class="pie ancho">
         <figure class="fotopie " >
             <img src="imagenes/brand-footer.png" alt= "" />
@@ -55,5 +75,8 @@
               </ul>
         </div>
     </footer>
+    <script></script>
+
+    <script src="movimientos.js"></script>
 </body>
 </html>

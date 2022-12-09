@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RECRUITMENT</title>
     <link rel="stylesheet" href="desktop.css">
+    <link rel="stylesheet" href="contacto.css">
     <script src='https://kit.fontawesome.com/2ee0245f3d.js' crossorigin='anonymous'></script>
 </head>
 <body>
+     <!--Flecha que tira pa arriba-->
+     <i class="ir-arriba fa-solid fa-circle-up"></i>
     <header class="ancho">
         <figure class >
             <img src="imagenes/brand.png" alt= "" />
@@ -24,20 +27,74 @@
             </ul>
         </nav>
     </header>
-   
-    <section class="contenedor2 ancho">
-        <h2 class="welcome">Welcome to our site!</h2>
-        <div class="contenedorinfo">
-            <article class="info1">
-                <figure  >
-                    <img src="imagenes/home-02.jpg" alt= "" />
-                </figure>
-                <h3>Ensuring the highest level of customers satisfaction</h3>
-                <p>Our company is your one-stop-solution for all needs. There is no doubt that we are the leaders and you don't have to worry about our image because it is perfect.</p>
-            </article>
-           
+    <section class=" ancho">
+        <div class="empleados">
+            <div class="perfiles">
+                <article>
+                    <figure>
+                        <img src="imagenes/home-08.jpg" alt="" height="100%" />
+                    </figure>
+                    <h2>Jessica Cooper</h2>
+                    <h3>Esthetician</h3>
+                    <ul class="redes">
+                        <li>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                        </li>
+                    </ul>
+                    
+                    <a class="btn" href="#" id="btn">Submit comment</a>
+                    
+                </article>
+                <article>
+                    <figure>
+                        <img src="imagenes/home-09.jpg" alt="" height="100%" />
+                    </figure>
+                    <h2>Robert Wagner</h2>
+                    <h3>Hairdresser</h3>
+                    <ul class="redes">
+                        <li>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                        </li>
+                    </ul>
+                    <a class="btn" href="#" id="butn">Submit comment</a>
+                </article>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
+
+<section id="modal" class="modal">
+    <div class="caja-modal">
+        <div class="caja-contenido">
+            <i id="btncerrar" class="btncerrar fas fa-window-close"></i>
+            <div class="caja-form">
+                <h1>Contact Us</h1>
+                <h2>
+                    9870 St Vincent Place, Glasgow, DC 45 Fr 45.
+                </h2>
+                <form action="">
+                    <input class="intp" type="text" placeholder="Name..." />
+                    <input type="text" placeholder="Email..." />
+                    <textarea rows="10" placeholder="Message..."></textarea>
+                    <input class="submit" type="submit" value="Submit" />
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+    <br>
     <footer class="pie ancho">
         <figure class="fotopie " >
             <img src="imagenes/brand-footer.png" alt= "" />
@@ -55,5 +112,30 @@
               </ul>
         </div>
     </footer>
+    <script >
+        	var mostrarmodal = document.getElementById("modal");
+			var cerrarmodal = document.getElementById("btncerrar");
+			var btnejecutar = document.getElementById("btn");
+			var btnejecutar2 = document.getElementById("butn");
+	
+			btnejecutar.onclick = function () {
+				mostrarmodal.style.display = "block";
+			};
+			
+			cerrarmodal.onclick = function () {
+				mostrarmodal.style.display = "none";
+			};
+			
+			btnejecutar2.onclick = function () {
+				mostrarmodal.style.display = "block";
+			};
+
+	
+			window.onclick = function (event) {
+				if (event.target == mostrarmodal) {
+					mostrarmodal.style.display = "none";
+				}
+			};
+    </script>
 </body>
 </html>
